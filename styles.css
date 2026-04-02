@@ -1,0 +1,1150 @@
+/* ========================================
+   CSS Стили для Санатория «Щучинский»
+   ПРОФЕССИОНАЛЬНЫЙ ДИЗАЙН
+   ======================================== */
+
+:root {
+    /* Спокойная, профессиональная палитра */
+    --primary-blue: #1e3a5f;
+    --primary-blue-light: #2d5a87;
+    --primary-blue-dark: #152a45;
+    
+    --accent-gold: #c9a962;
+    --accent-gold-light: #d4b878;
+    --accent-gold-dark: #b0924a;
+    
+    --neutral-dark: #2c2c2c;
+    --neutral-medium: #5a5a5a;
+    --neutral-light: #888888;
+    --neutral-pale: #b8b8b8;
+    
+    --bg-white: #ffffff;
+    --bg-cream: #f9f8f6;
+    --bg-light: #f0eee9;
+    --bg-grey: #e8e8e8;
+    
+    --text-primary: #1a1a1a;
+    --text-secondary: #4a4a4a;
+    --text-muted: #6b6b6b;
+    
+    --whatsapp-green: #25D366;
+    
+    /* Тени */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+    --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.15);
+    
+    /* Переходы */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    
+    /* Радиусы */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 18px;
+    --radius-full: 9999px;
+}
+
+/* ========================================
+   Базовые стили
+   ======================================== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--text-primary);
+    line-height: 1.7;
+    overflow-x: hidden;
+    background: var(--bg-cream);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-base);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ========================================
+   Header
+   ======================================== */
+.header {
+    background: var(--bg-white);
+    padding: 16px 0;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--accent-gold);
+}
+
+.header.scrolled {
+    padding: 12px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-main {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    background: var(--bg-white);
+    padding: 4px;
+    border: 1px solid var(--bg-grey);
+}
+
+.logo-text h1 {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--primary-blue);
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+}
+
+.kz-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent-gold);
+    display: block;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+.tagline {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 4px;
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.phone-icon {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    background: var(--primary-blue);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: var(--shadow-md);
+    flex-shrink: 0;
+}
+
+.clock-24 {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background: var(--accent-gold);
+    color: var(--white);
+    font-size: 9px;
+    padding: 3px 7px;
+    border-radius: var(--radius-full);
+    font-weight: 800;
+    box-shadow: var(--shadow-sm);
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.contacts a {
+    color: var(--primary-blue);
+    font-weight: 700;
+    transition: var(--transition-fast);
+}
+
+.contacts a:hover {
+    color: var(--accent-gold);
+}
+
+.contacts a.whatsapp-link {
+    color: var(--whatsapp-green) !important;
+}
+
+.divider {
+    color: var(--neutral-pale);
+    padding: 0 4px;
+}
+
+.email {
+    display: block;
+    width: 100%;
+    font-weight: 600 !important;
+    font-size: 13px;
+    color: var(--text-muted) !important;
+}
+
+/* ========================================
+   Navigation
+   ======================================== */
+.navbar {
+    background: var(--primary-blue);
+    position: sticky;
+    top: 94px;
+    z-index: 999;
+    box-shadow: var(--shadow-md);
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.nav-menu > li > a {
+    display: block;
+    padding: 16px 20px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: var(--transition-base);
+    border-radius: var(--radius-sm);
+}
+
+.nav-menu > li > a:hover,
+.nav-menu > li > a.active {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.nav-menu > li.active > a {
+    background: var(--accent-gold);
+    color: var(--primary-blue);
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--bg-white);
+    box-shadow: var(--shadow-lg);
+    border-radius: var(--radius-sm);
+    min-width: 220px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: var(--transition-base);
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid var(--bg-grey);
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 11px 14px;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: var(--radius-sm);
+    transition: var(--transition-base);
+}
+
+.dropdown-menu li a:hover {
+    background: var(--bg-cream);
+    color: var(--primary-blue);
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.menu-toggle span {
+    width: 24px;
+    height: 3px;
+    background: var(--white);
+    border-radius: var(--radius-full);
+    transition: var(--transition-base);
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+.hero {
+    position: relative;
+    min-height: 650px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-title {
+    font-size: 46px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 22px;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-description {
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 1.8;
+    margin-bottom: 32px;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 24px;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 500;
+}
+
+.btn-video {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--accent-gold);
+    color: var(--primary-blue);
+    padding: 17px 36px;
+    border-radius: var(--radius-full);
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-base);
+}
+
+.btn-video:hover {
+    background: var(--accent-gold-dark);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-xl);
+}
+
+.play-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--bg-white);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: var(--primary-blue);
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    border: 3px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-decor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 80' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L1200,0 L1200,80 L0,80 Q600,40 0,0 Z' fill='%23f9f8f6'/%3E%3C/svg%3E") no-repeat;
+    background-size: 100% 100%;
+}
+
+/* ========================================
+   Анимации
+   ======================================== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+}
+
+.animate-bounce-in {
+    animation: bounceIn 0.6s ease-out;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================================
+   Features Section
+   ======================================== */
+.features {
+    padding: 85px 0;
+    background: var(--bg-white);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: var(--bg-white);
+    padding: 34px 26px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
+    border: 1px solid var(--bg-grey);
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-gold);
+}
+
+.feature-icon {
+    font-size: 54px;
+    margin-bottom: 18px;
+    display: block;
+}
+
+.feature-card h3 {
+    font-size: 19px;
+    color: var(--primary-blue);
+    margin-bottom: 11px;
+    font-weight: 800;
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ========================================
+   Rooms Preview
+   ======================================== */
+.rooms-preview {
+    padding: 85px 0;
+    background: var(--bg-cream);
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--primary-blue);
+    margin-bottom: 55px;
+    position: relative;
+    letter-spacing: -0.5px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 4px;
+    background: var(--accent-gold);
+    border-radius: var(--radius-full);
+}
+
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 45px;
+}
+
+.room-card {
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-base);
+    border: 1px solid var(--bg-grey);
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.room-image {
+    height: 290px;
+    overflow: hidden;
+}
+
+.room-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.room-card:hover .room-image img {
+    transform: scale(1.1);
+}
+
+.room-info {
+    padding: 28px;
+}
+
+.room-info h3 {
+    font-size: 24px;
+    color: var(--primary-blue);
+    margin-bottom: 11px;
+    font-weight: 800;
+}
+
+.room-info p {
+    color: var(--text-secondary);
+    margin-bottom: 18px;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.btn-more {
+    color: var(--accent-gold);
+    font-weight: 700;
+    font-size: 15px;
+    transition: var(--transition-base);
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.btn-more::after {
+    content: '→';
+    transition: var(--transition-base);
+}
+
+.btn-more:hover {
+    color: var(--primary-blue);
+}
+
+.btn-more:hover::after {
+    transform: translateX(6px);
+}
+
+/* ========================================
+   CTA Section
+   ======================================== */
+.cta {
+    padding: 85px 0;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+    color: #ffffff;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 38px;
+    margin-bottom: 16px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.cta p {
+    font-size: 18px;
+    margin-bottom: 34px;
+    opacity: 1;
+    font-weight: 500;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 17px 40px;
+    border-radius: var(--radius-full);
+    font-weight: 800;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: var(--transition-base);
+}
+
+.btn-primary {
+    background: var(--accent-gold);
+    color: var(--primary-blue);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+    background: var(--accent-gold-dark);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-whatsapp {
+    background: var(--whatsapp-green);
+    color: var(--white);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-whatsapp:hover {
+    background: #1ebc57;
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+.footer {
+    background: var(--neutral-dark);
+    color: #ffffff;
+    padding: 65px 0 26px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 42px;
+    margin-bottom: 45px;
+}
+
+.footer-section img {
+    width: 66px;
+    height: 66px;
+    border-radius: var(--radius-md);
+    margin-bottom: 16px;
+    box-shadow: var(--shadow-md);
+    background: var(--bg-white);
+    padding: 4px;
+}
+
+.footer-section p {
+    opacity: 0.9;
+    line-height: 1.85;
+    font-size: 14px;
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 18px;
+    color: var(--accent-gold);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    opacity: 0.85;
+    transition: var(--transition-base);
+    color: #ffffff;
+}
+
+.footer-section ul li a:hover {
+    opacity: 1;
+    color: var(--accent-gold);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 11px 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-sm);
+    transition: var(--transition-base);
+}
+
+.social-link:hover {
+    background: var(--accent-gold);
+    color: var(--primary-blue);
+    transform: translateX(6px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 26px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+/* ========================================
+   WhatsApp Float Button
+   ======================================== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    width: 60px;
+    height: 60px;
+    background: var(--whatsapp-green);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-base);
+    z-index: 999;
+    animation: float 2.5s ease-in-out infinite;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-xl);
+    animation: none;
+}
+
+.whatsapp-icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--white);
+}
+
+/* ========================================
+   Page Hero
+   ======================================== */
+.page-hero {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    padding: 95px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.page-hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.page-subtitle {
+    font-size: 18px;
+    opacity: 1;
+    font-weight: 500;
+}
+
+/* ========================================
+   АДАПТИВ
+   ======================================== */
+
+/* Планшеты (1024px) */
+@media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+    }
+    
+    .hero-title {
+        font-size: 40px;
+    }
+    
+    .rooms-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Планшеты портрет (768px) */
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+    }
+    
+    .contacts {
+        display: none;
+    }
+    
+    .navbar {
+        top: 84px;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        background: rgba(30, 58, 95, 0.98);
+        padding: 16px;
+        border-radius: var(--radius-sm);
+        margin-top: 8px;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0.1);
+        margin-top: 8px;
+        border: none;
+    }
+
+    .dropdown-menu li a {
+        color: #ffffff;
+        padding: 10px 16px;
+    }
+
+    .hero {
+        min-height: 560px;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-description {
+        font-size: 16px;
+        padding: 20px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta h2 {
+        font-size: 28px;
+    }
+    
+    .cta p {
+        font-size: 16px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 290px;
+    }
+    
+    .page-hero {
+        padding: 70px 0;
+    }
+    
+    .page-hero h1 {
+        font-size: 34px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
+
+/* Мобильные (480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .header {
+        padding: 13px 0;
+    }
+    
+    .header-container {
+        gap: 12px;
+    }
+    
+    .logo-main {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .logo-text h1 {
+        font-size: 20px;
+    }
+    
+    .phone-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 16px;
+    }
+    
+    .hero {
+        min-height: 480px;
+    }
+    
+    .hero-title {
+        font-size: 26px;
+    }
+    
+    .hero-description {
+        font-size: 15px;
+        padding: 18px;
+    }
+    
+    .btn-video {
+        padding: 15px 28px;
+        font-size: 13px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .features {
+        padding: 65px 0;
+    }
+    
+    .feature-card {
+        padding: 28px 20px;
+    }
+    
+    .feature-icon {
+        font-size: 46px;
+    }
+    
+    .feature-card h3 {
+        font-size: 18px;
+    }
+    
+    .rooms-preview {
+        padding: 65px 0;
+    }
+    
+    .room-image {
+        height: 230px;
+    }
+    
+    .room-info {
+        padding: 22px;
+    }
+    
+    .room-info h3 {
+        font-size: 21px;
+    }
+    
+    .cta {
+        padding: 65px 0;
+    }
+    
+    .cta h2 {
+        font-size: 24px;
+    }
+    
+    .btn {
+        padding: 15px 32px;
+        font-size: 14px;
+    }
+    
+    .footer {
+        padding: 55px 0 22px;
+    }
+    
+    .whatsapp-float {
+        width: 56px;
+        height: 56px;
+        bottom: 22px;
+        right: 22px;
+    }
+    
+    .page-hero {
+        padding: 60px 0;
+    }
+    
+    .page-hero h1 {
+        font-size: 28px;
+    }
+}
+
+/* Маленькие мобильные (360px) */
+@media (max-width: 360px) {
+    .logo-text h1 {
+        font-size: 18px;
+    }
+    
+    .hero-title {
+        font-size: 23px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .btn {
+        padding: 14px 26px;
+        font-size: 13px;
+    }
+}
+
+/* Скроллбар */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-blue);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-blue-light);
+}

@@ -1,0 +1,124 @@
+/* ========================================
+   Стили для страницы цен
+   ПРОФЕССИОНАЛЬНЫЙ ДИЗАЙН
+   ======================================== */
+
+.page-hero {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    padding: 95px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.page-hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.page-subtitle {
+    font-size: 18px;
+    opacity: 1;
+    font-weight: 500;
+}
+
+.prices-section {
+    padding: 70px 0;
+    background: var(--bg-cream);
+}
+
+.price-category {
+    margin-bottom: 55px;
+}
+
+.price-category h2 {
+    font-size: 30px;
+    color: var(--primary-blue);
+    margin-bottom: 28px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--accent-gold);
+    display: inline-block;
+    font-weight: 900;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--bg-grey);
+}
+
+.price-table thead {
+    background: var(--primary-blue);
+    color: var(--white);
+}
+
+.price-table th {
+    padding: 18px 20px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.price-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--bg-grey);
+    font-size: 15px;
+}
+
+.price-table tbody tr:hover {
+    background: var(--bg-cream);
+}
+
+.price-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.price-value {
+    font-weight: 800;
+    color: var(--accent-gold);
+    font-size: 17px;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .page-hero { padding: 70px 0; }
+    .page-hero h1 { font-size: 34px; }
+    .price-category h2 { font-size: 24px; }
+    .price-table { font-size: 14px; }
+    .price-table th, .price-table td { padding: 13px 15px; }
+}
+
+@media (max-width: 480px) {
+    .page-hero h1 { font-size: 28px; }
+    .price-table thead { display: none; }
+    .price-table tr {
+        display: block;
+        margin-bottom: 16px;
+        border: 1px solid var(--bg-grey);
+        border-radius: var(--radius-md);
+        padding: 16px;
+    }
+    .price-table td {
+        text-align: right;
+        padding: 8px 0;
+        border-bottom: none;
+        position: relative;
+        padding-left: 50%;
+    }
+    .price-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+        color: var(--text-primary);
+    }
+}

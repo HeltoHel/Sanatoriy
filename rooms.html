@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Номера - Санаторий «Щучинский»</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rooms.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-section">
+                <img src="logo/WhatsApp Image 2026-03-26 at 20.14.41.jpeg" alt="Логотип Щучинский" class="logo-main">
+                <div class="logo-text">
+                    <h1>ЩУЧИНСКИЙ</h1>
+                    <span class="kz-name">ШИПАЖАЙЫ САНАТОРИЙ</span>
+                    <p class="tagline">"Ваше место для семейного лечебно-оздоровительного отдыха"</p>
+                </div>
+            </div>
+            <div class="contact-section">
+                <div class="phone-icon">
+                    <span class="clock-24">24</span>
+                </div>
+                <div class="contacts">
+                    <a href="tel:+77163679030">+7(71636) 7-90-30</a>
+                    <span class="divider">/</span>
+                    <a href="tel:+77472265918">+7(747) 226-59-18</a>
+                    <span class="divider">/</span>
+                    <a href="https://wa.me/77472265918" class="whatsapp-link">WhatsApp: +7(747) 226-59-18</a>
+                    <a href="mailto:san-boro@mail.ru" class="email">san-boro@mail.ru</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html">ГЛАВНАЯ</a></li>
+                <li class="dropdown">
+                    <a href="rooms.html" class="active">НОМЕРА</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#standard">Стандарт</a></li>
+                        <li><a href="#semilux">Полулюкс</a></li>
+                    </ul>
+                </li>
+                <li><a href="prices.html">ЦЕНЫ</a></li>
+                <li class="dropdown">
+                    <a href="services.html">УСЛУГИ</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html#medical">Медицинские</a></li>
+                        <li><a href="services.html#recreation">Оздоровительные</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">ФОТОГАЛЕРЕЯ</a></li>
+                <li><a href="reviews.html">ОТЗЫВЫ</a></li>
+                <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                <li><a href="vacancies.html">ВАКАНСИИ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Наши номера</h1>
+            <p class="page-subtitle">Выберите комфортное размещение для вашего отдыха</p>
+        </div>
+    </section>
+
+    <!-- Standard Room -->
+    <section class="room-detail" id="standard">
+        <div class="container">
+            <div class="room-detail-header">
+                <div class="room-badge">2-местный</div>
+                <h2>Номер «Стандарт»</h2>
+                <p class="room-price">от 15 000 ₸ / сутки</p>
+            </div>
+            
+            <div class="room-gallery">
+                <div class="room-main-image">
+                    <img src="Trash/Screenshot_1.png" alt="Номер Стандарт - основная комната">
+                </div>
+                <div class="room-images-grid">
+                    <div class="room-sub-image">
+                        <img src="Trash/Screenshot_2.png" alt="Номер Стандарт - ванная комната">
+                    </div>
+                    <div class="room-sub-image">
+                        <img src="Trash/Screenshot_7.png" alt="Номер Стандарт - вид комнаты">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room-content">
+                <div class="room-description">
+                    <h3>Описание номера</h3>
+                    <p>Уютный двухместный номер с двумя односпальными кроватями. Идеально подходит для размещения двух гостей. Номер оборудован всем необходимым для комфортного проживания.</p>
+                    
+                    <div class="room-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">🛏️</span>
+                            <span>Две односпальные кровати</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🚿</span>
+                            <span>Душевая кабина</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📺</span>
+                            <span>Телевизор</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🪑</span>
+                            <span>Рабочая зона</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🌡️</span>
+                            <span>Кондиционер</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📶</span>
+                            <span>Бесплатный Wi-Fi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-booking">
+                    <h3>Забронировать</h3>
+                    <form class="booking-form">
+                        <div class="form-group">
+                            <label for="checkin">Дата заезда</label>
+                            <input type="date" id="checkin" name="checkin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout">Дата выезда</label>
+                            <input type="date" id="checkout" name="checkout" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Количество гостей</label>
+                            <select id="guests" name="guests">
+                                <option value="1">1 гость</option>
+                                <option value="2" selected>2 гостя</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-book">Забронировать</button>
+                        <a href="https://wa.me/77472265918?text=Здравствуйте! Хочу забронировать номер Стандарт" class="btn-whatsapp-book">
+                            <svg viewBox="0 0 32 32" class="whatsapp-icon-small">
+                                <path fill="currentColor" d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.082c2.404 1.372 5.134 2.082 7.933 2.082 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.466c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.245 1.376 1.417-5.273-0.317-0.508c-1.261-2.027-1.928-4.358-1.928-6.754 0-6.903 5.614-12.517 12.517-12.517 6.903 0 12.517 5.614 12.517 12.517s-5.614 12.517-12.517 12.517z"/>
+                            </svg>
+                            Через WhatsApp
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Semilux Room -->
+    <section class="room-detail semilux" id="semilux">
+        <div class="container">
+            <div class="room-detail-header">
+                <div class="room-badge premium">Премиум</div>
+                <h2>Номер «Полулюкс»</h2>
+                <p class="room-price">от 25 000 ₸ / сутки</p>
+            </div>
+            
+            <div class="room-gallery">
+                <div class="room-main-image">
+                    <img src="Trash/Screenshot_3.png" alt="Номер Полулюкс - гостиная">
+                </div>
+                <div class="room-images-grid">
+                    <div class="room-sub-image">
+                        <img src="Trash/Screenshot_4.png" alt="Номер Полулюкс - спальня">
+                    </div>
+                    <div class="room-sub-image">
+                        <img src="Trash/Screenshot_5.png" alt="Номер Полулюкс - рабочая зона">
+                    </div>
+                    <div class="room-sub-image">
+                        <img src="Trash/Screenshot_6.png" alt="Номер Полулюкс - ванная комната">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room-content">
+                <div class="room-description">
+                    <h3>Описание номера</h3>
+                    <p>Просторный двухкомнатный номер с отдельной гостиной и спальней. Повышенный комфорт и дополнительная площадь для вашего удобства. Идеально подходит для романтического отдыха или размещения с семьей.</p>
+                    
+                    <div class="room-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">🛏️</span>
+                            <span>Двуспальная кровать</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🛋️</span>
+                            <span>Отдельная гостиная</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🛁</span>
+                            <span>Ванная комната</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📺</span>
+                            <span>Телевизор с плоским экраном</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">☕</span>
+                            <span>Чайная станция</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🪞</span>
+                            <span>Шкаф с зеркалом</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🌡️</span>
+                            <span>Кондиционер</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📶</span>
+                            <span>Бесплатный Wi-Fi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-booking">
+                    <h3>Забронировать</h3>
+                    <form class="booking-form">
+                        <div class="form-group">
+                            <label for="checkin-semi">Дата заезда</label>
+                            <input type="date" id="checkin-semi" name="checkin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-semi">Дата выезда</label>
+                            <input type="date" id="checkout-semi" name="checkout" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests-semi">Количество гостей</label>
+                            <select id="guests-semi" name="guests">
+                                <option value="1">1 гость</option>
+                                <option value="2" selected>2 гостя</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-book">Забронировать</button>
+                        <a href="https://wa.me/77472265918?text=Здравствуйте! Хочу забронировать номер Полулюкс" class="btn-whatsapp-book">
+                            <svg viewBox="0 0 32 32" class="whatsapp-icon-small">
+                                <path fill="currentColor" d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.082c2.404 1.372 5.134 2.082 7.933 2.082 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.466c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.245 1.376 1.417-5.273-0.317-0.508c-1.261-2.027-1.928-4.358-1.928-6.754 0-6.903 5.614-12.517 12.517-12.517 6.903 0 12.517 5.614 12.517 12.517s-5.614 12.517-12.517 12.517z"/>
+                            </svg>
+                            Через WhatsApp
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Нужна помощь с выбором?</h2>
+            <p>Наши менеджеры помогут подобрать идеальный номер для вашего отдыха</p>
+            <div class="cta-buttons">
+                <a href="tel:+77163679030" class="btn btn-primary">Позвонить</a>
+                <a href="https://wa.me/77472265918" class="btn btn-whatsapp">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <img src="logo/WhatsApp Image 2026-03-26 at 20.14.41 (1).jpeg" alt="Логотип" class="footer-logo">
+                    <p>Санаторий «Щучинский» - ваше место для семейного лечебно-оздоровительного отдыха</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="rooms.html">Номера</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>📞 +7(71636) 7-90-30</p>
+                    <p>📱 +7(747) 226-59-18</p>
+                    <p>✉️ san-boro@mail.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="https://wa.me/77472265918" class="social-link">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Санаторий «Щучинский». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/77472265918" class="whatsapp-float" target="_blank">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+            <path fill="currentColor" d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.082c2.404 1.372 5.134 2.082 7.933 2.082 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.466c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.245 1.376 1.417-5.273-0.317-0.508c-1.261-2.027-1.928-4.358-1.928-6.754 0-6.903 5.614-12.517 12.517-12.517 6.903 0 12.517 5.614 12.517 12.517s-5.614 12.517-12.517 12.517z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

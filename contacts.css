@@ -1,0 +1,447 @@
+/* ========================================
+   Стили для страницы контактов
+   ПРОФЕССИОНАЛЬНЫЙ ДИЗАЙН
+   ======================================== */
+
+/* Page Hero */
+.page-hero {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    padding: 95px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.page-hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.page-subtitle {
+    font-size: 18px;
+    opacity: 1;
+    font-weight: 500;
+}
+
+/* Contacts Section */
+.contacts-section {
+    padding: 70px 0;
+    background: var(--bg-white);
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 26px;
+    margin-bottom: 45px;
+}
+
+.contact-card {
+    background: var(--bg-white);
+    padding: 32px 26px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
+    border: 1px solid var(--bg-grey);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-gold);
+}
+
+.contact-icon {
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 18px;
+    background: var(--primary-blue);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--white);
+}
+
+.contact-card h3 {
+    font-size: 20px;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.contact-card p {
+    color: var(--text-secondary);
+    line-height: 1.75;
+    font-size: 14px;
+}
+
+.contact-card a {
+    color: var(--primary-blue);
+    font-weight: 700;
+    transition: var(--transition-fast);
+}
+
+.contact-card a:hover {
+    color: var(--accent-gold);
+}
+
+.contact-link {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background: var(--bg-cream);
+    border-radius: var(--radius-sm);
+    transition: var(--transition-base);
+}
+
+.contact-link:hover {
+    background: var(--primary-blue);
+}
+
+.contact-link:hover a {
+    color: var(--white) !important;
+}
+
+/* Map Section */
+.map-section {
+    margin-bottom: 45px;
+}
+
+.map-container {
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--bg-grey);
+}
+
+.map-placeholder {
+    height: 420px;
+    background: linear-gradient(135deg, #e8ecef 0%, #d9dde2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.map-placeholder-icon {
+    font-size: 70px;
+    margin-bottom: 18px;
+}
+
+.map-placeholder h3 {
+    font-size: 22px;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.map-placeholder p {
+    color: var(--text-secondary);
+    max-width: 480px;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.map-address {
+    margin-top: 20px;
+    padding: 14px 26px;
+    background: var(--primary-blue);
+    color: white;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 70px 0;
+    background: var(--bg-cream);
+}
+
+.contact-form-container {
+    max-width: 660px;
+    margin: 0 auto;
+    background: var(--bg-white);
+    padding: 38px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--bg-grey);
+}
+
+.contact-form-container h2 {
+    font-size: 30px;
+    color: var(--primary-blue);
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: 900;
+}
+
+.contact-form-container > p {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 28px;
+    font-size: 15px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 13px 16px;
+    border: 2px solid var(--bg-grey);
+    border-radius: var(--radius-md);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    transition: var(--transition-base);
+    background: var(--bg-white);
+    color: var(--text-primary);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: var(--radius-full);
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: var(--transition-base);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.btn-submit:hover {
+    background: var(--primary-blue-dark);
+    transform: translateY(-2px);
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 70px 0;
+    background: var(--bg-white);
+}
+
+.faq-section h2 {
+    font-size: 36px;
+    color: var(--primary-blue);
+    text-align: center;
+    margin-bottom: 45px;
+    font-weight: 900;
+}
+
+.faq-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 18px;
+}
+
+.faq-item {
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    border: 1px solid var(--bg-grey);
+}
+
+.faq-question {
+    padding: 22px 26px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text-primary);
+    transition: var(--transition-base);
+}
+
+.faq-question:hover {
+    background: var(--bg-cream);
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 22px;
+    color: var(--primary-blue);
+    transition: var(--transition-base);
+}
+
+.faq-item.active .faq-question::after {
+    content: '−';
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.faq-answer-content {
+    padding: 0 26px 22px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+}
+
+.faq-item.active .faq-answer-content {
+    padding-top: 12px;
+}
+
+/* Адаптив */
+@media (max-width: 1024px) {
+    .contacts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 70px 0;
+    }
+
+    .page-hero h1 {
+        font-size: 34px;
+    }
+
+    .contacts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-placeholder {
+        height: 340px;
+    }
+
+    .contact-form-container {
+        padding: 28px 24px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-section h2 {
+        font-size: 28px;
+    }
+
+    .faq-question {
+        font-size: 15px;
+        padding: 18px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero {
+        padding: 60px 0;
+    }
+
+    .page-hero h1 {
+        font-size: 28px;
+    }
+
+    .contacts-section {
+        padding: 50px 0;
+    }
+
+    .contact-card {
+        padding: 26px 20px;
+    }
+
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
+    }
+
+    .contact-card h3 {
+        font-size: 18px;
+    }
+
+    .map-placeholder {
+        height: 280px;
+    }
+
+    .map-placeholder h3 {
+        font-size: 19px;
+    }
+
+    .contact-form-container {
+        padding: 24px 18px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .btn-submit {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .faq-section {
+        padding: 50px 0;
+    }
+
+    .faq-section h2 {
+        font-size: 24px;
+    }
+
+    .faq-question {
+        padding: 16px 18px;
+        font-size: 14px;
+    }
+
+    .faq-answer-content {
+        padding: 0 18px 18px;
+        font-size: 14px;
+    }
+}

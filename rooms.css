@@ -1,0 +1,399 @@
+/* ========================================
+   Стили для страницы номеров
+   ПРОФЕССИОНАЛЬНЫЙ ДИЗАЙН
+   ======================================== */
+
+/* Page Hero */
+.page-hero {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    padding: 95px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.page-hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.page-subtitle {
+    font-size: 18px;
+    opacity: 1;
+    font-weight: 500;
+}
+
+/* Room Detail */
+.room-detail {
+    padding: 70px 0;
+    background: var(--bg-white);
+}
+
+.room-detail.semilux {
+    background: var(--bg-cream);
+}
+
+.room-detail-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.room-badge {
+    display: inline-block;
+    background: var(--primary-blue);
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: var(--radius-full);
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.room-badge.premium {
+    background: var(--accent-gold);
+    color: var(--primary-blue);
+}
+
+.room-detail-header h2 {
+    font-size: 38px;
+    color: var(--primary-blue);
+    margin-bottom: 12px;
+    font-weight: 900;
+}
+
+.room-price {
+    font-size: 26px;
+    color: var(--accent-gold);
+    font-weight: 800;
+}
+
+/* Gallery */
+.room-gallery {
+    margin-bottom: 50px;
+}
+
+.room-main-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-lg);
+}
+
+.room-main-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.room-main-image:hover img {
+    transform: scale(1.08);
+}
+
+.room-images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.room-sub-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.room-sub-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.room-sub-image:hover img {
+    transform: scale(1.1);
+}
+
+/* Content */
+.room-content {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.room-description h3 {
+    font-size: 30px;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.room-description p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.room-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 14px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: var(--bg-cream);
+    border-radius: var(--radius-md);
+    transition: var(--transition-base);
+    border: 1px solid var(--bg-grey);
+}
+
+.feature-item:hover {
+    background: var(--primary-blue);
+    color: white;
+    transform: translateX(5px);
+    border-color: var(--primary-blue);
+}
+
+.feature-item:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+.feature-icon {
+    font-size: 26px;
+    flex-shrink: 0;
+    transition: var(--transition-base);
+}
+
+.feature-item span:last-child {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Booking Form */
+.room-booking {
+    background: var(--bg-white);
+    padding: 32px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    position: sticky;
+    top: 130px;
+    border: 1px solid var(--bg-grey);
+}
+
+.room-booking h3 {
+    font-size: 22px;
+    color: var(--primary-blue);
+    margin-bottom: 26px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 700;
+    color: var(--text-primary);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 14px 16px;
+    border: 2px solid var(--bg-grey);
+    border-radius: var(--radius-md);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    transition: var(--transition-base);
+    background: var(--bg-white);
+    color: var(--text-primary);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+}
+
+.btn-book {
+    background: var(--accent-gold);
+    color: var(--primary-blue);
+    padding: 16px;
+    border: none;
+    border-radius: var(--radius-full);
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: var(--transition-base);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.btn-book:hover {
+    background: var(--accent-gold-dark);
+    transform: translateY(-2px);
+}
+
+.btn-whatsapp-book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--whatsapp-green);
+    color: var(--white);
+    padding: 16px;
+    border-radius: var(--radius-full);
+    font-size: 15px;
+    font-weight: 800;
+    transition: var(--transition-base);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.btn-whatsapp-book:hover {
+    background: #1ebc57;
+    transform: translateY(-2px);
+}
+
+.whatsapp-icon-small {
+    width: 24px;
+    height: 24px;
+    fill: var(--white);
+}
+
+/* Адаптив */
+@media (max-width: 1024px) {
+    .room-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .room-booking {
+        position: static;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 70px 0;
+    }
+
+    .page-hero h1 {
+        font-size: 34px;
+    }
+
+    .room-detail {
+        padding: 50px 0;
+    }
+
+    .room-detail-header h2 {
+        font-size: 28px;
+    }
+
+    .room-price {
+        font-size: 22px;
+    }
+
+    .room-main-image img {
+        height: 320px;
+    }
+
+    .room-sub-image img {
+        height: 240px;
+    }
+
+    .room-features {
+        grid-template-columns: 1fr;
+    }
+
+    .room-booking {
+        padding: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero h1 {
+        font-size: 28px;
+    }
+
+    .room-detail {
+        padding: 40px 0;
+    }
+
+    .room-badge {
+        font-size: 11px;
+        padding: 6px 16px;
+    }
+
+    .room-detail-header h2 {
+        font-size: 24px;
+    }
+
+    .room-price {
+        font-size: 20px;
+    }
+
+    .room-main-image img {
+        height: 240px;
+    }
+
+    .room-sub-image img {
+        height: 200px;
+    }
+
+    .room-images-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .room-description h3 {
+        font-size: 22px;
+    }
+
+    .feature-item {
+        padding: 14px 12px;
+    }
+
+    .feature-icon {
+        font-size: 22px;
+    }
+
+    .room-booking {
+        padding: 22px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .btn-book,
+    .btn-whatsapp-book {
+        padding: 14px;
+        font-size: 14px;
+    }
+}
