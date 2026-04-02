@@ -1,0 +1,310 @@
+/* ========================================
+   Стили для страницы услуг
+   ПРОФЕССИОНАЛЬНЫЙ ДИЗАЙН
+   ======================================== */
+
+/* Page Hero */
+.page-hero {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    padding: 95px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.page-hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.page-subtitle {
+    font-size: 18px;
+    opacity: 1;
+    font-weight: 500;
+}
+
+/* Services Section */
+.services-section {
+    padding: 80px 0;
+    background: var(--bg-cream);
+}
+
+.service-category {
+    margin-bottom: 75px;
+}
+
+.service-category-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-category-header h2 {
+    font-size: 38px;
+    color: var(--primary-blue);
+    margin-bottom: 16px;
+    font-weight: 900;
+}
+
+.service-category-header p {
+    font-size: 17px;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Badges */
+.medical-badge,
+.recreation-badge {
+    display: inline-block;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: var(--radius-full);
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.medical-badge {
+    background: var(--primary-blue);
+}
+
+.recreation-badge {
+    background: var(--primary-blue-light);
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 28px;
+}
+
+.service-card {
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
+    border: 1px solid var(--bg-grey);
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-image {
+    height: 200px;
+    background: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+}
+
+.service-content {
+    padding: 28px;
+}
+
+.service-content h3 {
+    font-size: 22px;
+    color: var(--primary-blue);
+    margin-bottom: 14px;
+    font-weight: 800;
+}
+
+.service-content p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.75;
+    font-size: 15px;
+}
+
+.service-features {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.service-features li {
+    padding: 9px 0 9px 30px;
+    position: relative;
+    color: var(--text-primary);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.service-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-gold);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.service-price {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--bg-grey);
+    font-size: 17px;
+    color: var(--primary-blue);
+    font-weight: 800;
+}
+
+.service-price span {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* Treatment Plan */
+.service-full {
+    background: var(--bg-white);
+    padding: 50px;
+    border-radius: var(--radius-lg);
+    margin-top: 50px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--bg-grey);
+}
+
+.service-full h3 {
+    font-size: 30px;
+    color: var(--primary-blue);
+    margin-bottom: 38px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.treatment-plan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.plan-step {
+    text-align: center;
+    padding: 32px 24px;
+    background: var(--bg-cream);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+    border: 1px solid var(--bg-grey);
+}
+
+.plan-step:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.plan-step-number {
+    width: 56px;
+    height: 56px;
+    background: #638abe;
+    color: var(--white);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 auto 18px;
+}
+
+.plan-step h4 {
+    font-size: 18px;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.plan-step p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .page-hero {
+        padding: 70px 0;
+    }
+
+    .page-hero h1 {
+        font-size: 34px;
+    }
+
+    .service-category-header h2 {
+        font-size: 28px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-full {
+        padding: 35px 24px;
+    }
+
+    .treatment-plan {
+        grid-template-columns: 1fr;
+    }
+
+    .service-image {
+        height: 180px;
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero {
+        padding: 60px 0;
+    }
+
+    .page-hero h1 {
+        font-size: 28px;
+    }
+
+    .service-category-header h2 {
+        font-size: 24px;
+    }
+
+    .service-content {
+        padding: 22px;
+    }
+
+    .service-content h3 {
+        font-size: 20px;
+    }
+
+    .service-image {
+        height: 160px;
+        font-size: 48px;
+    }
+
+    .service-full {
+        padding: 28px 20px;
+    }
+
+    .service-full h3 {
+        font-size: 22px;
+    }
+
+    .plan-step {
+        padding: 24px 18px;
+    }
+
+    .plan-step-number {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
+    .plan-step h4 {
+        font-size: 16px;
+    }
+}

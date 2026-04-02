@@ -1,0 +1,339 @@
+/* ========================================
+   Стили для страницы вакансий
+   ПРОФЕССИОНАЛЬНЫЙ ДИЗАЙН
+   ======================================== */
+
+.page-hero {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    padding: 95px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.page-hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.page-subtitle {
+    font-size: 18px;
+    opacity: 1;
+    font-weight: 500;
+}
+
+.vacancies-section {
+    padding: 70px 0;
+    background: var(--bg-cream);
+}
+
+.vacancies-intro {
+    max-width: 750px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.vacancies-intro h2 {
+    font-size: 30px;
+    color: var(--primary-blue);
+    margin-bottom: 16px;
+    font-weight: 900;
+}
+
+.vacancies-intro p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.75;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-bottom: 45px;
+}
+
+.benefit-card {
+    background: var(--bg-white);
+    padding: 28px 22px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
+    border: 1px solid var(--bg-grey);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.benefit-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.benefit-card h3 {
+    font-size: 18px;
+    color: var(--primary-blue);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.benefit-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.vacancies-list {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 45px;
+}
+
+.vacancy-card {
+    background: var(--bg-white);
+    padding: 28px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
+    border: 1px solid var(--bg-grey);
+}
+
+.vacancy-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.vacancy-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 14px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.vacancy-header h3 {
+    font-size: 22px;
+    color: var(--primary-blue);
+    font-weight: 800;
+}
+
+.vacancy-salary {
+    font-size: 18px;
+    color: var(--accent-gold);
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.vacancy-meta {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.vacancy-meta span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.vacancy-description {
+    color: var(--text-secondary);
+    line-height: 1.75;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.vacancy-requirements {
+    margin-bottom: 18px;
+}
+
+.vacancy-requirements h4 {
+    font-size: 16px;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.vacancy-requirements ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.vacancy-requirements li {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 6px;
+    line-height: 1.55;
+}
+
+.vacancy-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn-apply,
+.btn-whatsapp-apply {
+    padding: 12px 24px;
+    border: none;
+    border-radius: var(--radius-full);
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: var(--transition-base);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-apply {
+    background: var(--primary-blue);
+    color: whitesmoke;
+}
+
+.btn-apply:hover {
+    background: var(--primary-blue-dark);
+    transform: translateY(-2px);
+}
+
+.btn-whatsapp-apply {
+    background: var(--whatsapp-green);
+    color: var(--white);
+}
+
+.btn-whatsapp-apply:hover {
+    background: #1ebc57;
+    transform: translateY(-2px);
+}
+
+.application-section {
+    padding: 70px 0;
+    background: var(--bg-white);
+}
+
+.application-form-container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: var(--bg-cream);
+    padding: 36px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--bg-grey);
+}
+
+.application-form-container h2 {
+    font-size: 28px;
+    color: var(--primary-blue);
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: 900;
+}
+
+.application-form-container > p {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 28px;
+    font-size: 15px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 13px 16px;
+    border: 2px solid var(--bg-grey);
+    border-radius: var(--radius-md);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    transition: var(--transition-base);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-full);
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: var(--transition-base);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.btn-submit:hover {
+    background: var(--primary-blue-dark);
+    transform: translateY(-2px);
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .page-hero { padding: 70px 0; }
+    .page-hero h1 { font-size: 34px; }
+    .vacancies-intro h2 { font-size: 24px; }
+    .vacancy-header { flex-direction: column; gap: 10px; }
+    .vacancy-salary { font-size: 16px; }
+    .form-row { grid-template-columns: 1fr; }
+    .application-form-container { padding: 28px 22px; }
+}
+
+@media (max-width: 480px) {
+    .page-hero { padding: 60px 0; }
+    .page-hero h1 { font-size: 28px; }
+    .vacancies-intro h2 { font-size: 22px; }
+    .vacancies-intro p { font-size: 14px; }
+    .benefits-grid { grid-template-columns: 1fr; }
+    .benefit-card { padding: 24px 18px; }
+    .vacancy-card { padding: 22px; }
+    .vacancy-header h3 { font-size: 19px; }
+    .vacancy-salary { font-size: 15px; }
+    .vacancy-actions { flex-direction: column; }
+    .btn-apply, .btn-whatsapp-apply { width: 100%; text-align: center; }
+    .application-form-container { padding: 24px 18px; }
+    .application-form-container h2 { font-size: 24px; }
+    .form-group input, .form-group textarea, .form-group select { padding: 12px 14px; font-size: 14px; }
+    .btn-submit { padding: 14px; font-size: 14px; }
+}

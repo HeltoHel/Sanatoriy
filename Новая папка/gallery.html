@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотогалерея - Санаторий «Щучинский»</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-section">
+                <img src="logo/WhatsApp Image 2026-03-26 at 20.14.41.jpeg" alt="Логотип Щучинский" class="logo-main">
+                <div class="logo-text">
+                    <h1>ЩУЧИНСКИЙ</h1>
+                    <span class="kz-name">ШИПАЖАЙЫ САНАТОРИЙ</span>
+                    <p class="tagline">"Ваше место для семейного лечебно-оздоровительного отдыха"</p>
+                </div>
+            </div>
+            <div class="contact-section">
+                <div class="phone-icon">
+                    <span class="clock-24">24</span>
+                </div>
+                <div class="contacts">
+                    <a href="tel:+77163679030">+7(71636) 7-90-30</a>
+                    <span class="divider">/</span>
+                    <a href="tel:+77472265918">+7(747) 226-59-18</a>
+                    <span class="divider">/</span>
+                    <a href="https://wa.me/77472265918" class="whatsapp-link">WhatsApp: +7(747) 226-59-18</a>
+                    <a href="mailto:san-boro@mail.ru" class="email">san-boro@mail.ru</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html">ГЛАВНАЯ</a></li>
+                <li class="dropdown">
+                    <a href="rooms.html">НОМЕРА</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="rooms.html#standard">Стандарт</a></li>
+                        <li><a href="rooms.html#semilux">Полулюкс</a></li>
+                    </ul>
+                </li>
+                <li><a href="prices.html">ЦЕНЫ</a></li>
+                <li class="dropdown">
+                    <a href="services.html">УСЛУГИ</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services.html#medical">Медицинские</a></li>
+                        <li><a href="services.html#recreation">Оздоровительные</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html" class="active">ФОТОГАЛЕРЕЯ</a></li>
+                <li><a href="reviews.html">ОТЗЫВЫ</a></li>
+                <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                <li><a href="vacancies.html">ВАКАНСИИ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Фотогалерея</h1>
+            <p class="page-subtitle">Посмотрите, как мы живем и заботимся о вашем здоровье</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <!-- Filter -->
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">Все фото</button>
+                <button class="filter-btn" data-filter="rooms">Номера</button>
+                <button class="filter-btn" data-filter="medical">Лечение</button>
+                <button class="filter-btn" data-filter="recreation">Отдых</button>
+                <button class="filter-btn" data-filter="territory">Территория</button>
+            </div>
+
+            <!-- Featured Gallery -->
+            <div class="gallery-category">
+                <h2>Избранные фото</h2>
+                <div class="featured-gallery">
+                    <div class="featured-item gallery-item" data-category="rooms">
+                        <img src="Trash/Screenshot_1.png" alt="Номер Стандарт">
+                        <div class="gallery-overlay">
+                            <h3>Номер «Стандарт»</h3>
+                            <p>Уютный номер для комфортного проживания</p>
+                        </div>
+                    </div>
+                    <div class="featured-item gallery-item" data-category="rooms">
+                        <img src="Trash/Screenshot_3.png" alt="Номер Полулюкс">
+                        <div class="gallery-overlay">
+                            <h3>Номер «Полулюкс»</h3>
+                            <p>Просторный двухкомнатный номер</p>
+                        </div>
+                    </div>
+                    <div class="featured-item gallery-item" data-category="medical">
+                        <img src="Trash/Screenshot_2.png" alt="Лечебный кабинет">
+                        <div class="gallery-overlay">
+                            <h3>Лечебные процедуры</h3>
+                            <p>Современное оборудование</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rooms Gallery -->
+            <div class="gallery-category">
+                <h2>Номера</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="rooms">
+                        <img src="Trash/Screenshot_1.png" alt="Номер Стандарт">
+                        <div class="gallery-overlay">
+                            <h3>Номер «Стандарт»</h3>
+                            <p>Двухместный номер</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="rooms">
+                        <img src="Trash/Screenshot_2.png" alt="Ванная комната">
+                        <div class="gallery-overlay">
+                            <h3>Ванная комната</h3>
+                            <p>Современный санузел</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="rooms">
+                        <img src="Trash/Screenshot_7.png" alt="Интерьер номера">
+                        <div class="gallery-overlay">
+                            <h3>Интерьер</h3>
+                            <p>Уютная обстановка</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="rooms">
+                        <img src="Trash/Screenshot_3.png" alt="Номер Полулюкс">
+                        <div class="gallery-overlay">
+                            <h3>Номер «Полулюкс»</h3>
+                            <p>Гостиная зона</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="rooms">
+                        <img src="Trash/Screenshot_4.png" alt="Спальня Полулюкс">
+                        <div class="gallery-overlay">
+                            <h3>Спальня</h3>
+                            <p>Комфортный сон</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="rooms">
+                        <img src="Trash/Screenshot_5.png" alt="Рабочая зона">
+                        <div class="gallery-overlay">
+                            <h3>Рабочая зона</h3>
+                            <p>Для вашего удобства</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medical Gallery -->
+            <div class="gallery-category">
+                <h2>Лечение и процедуры</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="medical">
+                        <img src="Trash/Screenshot_6.png" alt="Физиотерапия">
+                        <div class="gallery-overlay">
+                            <h3>Физиотерапия</h3>
+                            <p>Современные методы лечения</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="medical">
+                        <img src="logo/WhatsApp Image 2026-03-26 at 20.14.41.jpeg" alt="Массаж">
+                        <div class="gallery-overlay">
+                            <h3>Массаж</h3>
+                            <p>Профессиональные массажисты</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="medical">
+                        <img src="logo/WhatsApp Image 2026-03-26 at 20.14.41 (1).jpeg" alt="Водолечение">
+                        <div class="gallery-overlay">
+                            <h3>Водолечение</h3>
+                            <p>Лечебные ванны</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="medical">
+                        <img src="Trash/Screenshot_1.png" alt="Диагностика">
+                        <div class="gallery-overlay">
+                            <h3>Диагностика</h3>
+                            <p>Точная диагностика</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recreation Gallery -->
+            <div class="gallery-category">
+                <h2>Отдых и развлечения</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="recreation">
+                        <img src="Trash/Screenshot_3.png" alt="Зона отдыха">
+                        <div class="gallery-overlay">
+                            <h3>Зона отдыха</h3>
+                            <p>Для комфортного времяпрепровождения</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="recreation">
+                        <img src="Trash/Screenshot_4.png" alt="Спортзал">
+                        <div class="gallery-overlay">
+                            <h3>Спортзал</h3>
+                            <p>Поддерживайте форму</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="recreation">
+                        <img src="Trash/Screenshot_5.png" alt="Библиотека">
+                        <div class="gallery-overlay">
+                            <h3>Библиотека</h3>
+                            <p>Книги и настольные игры</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="recreation">
+                        <img src="Trash/Screenshot_6.png" alt="Йога">
+                        <div class="gallery-overlay">
+                            <h3>Йога</h3>
+                            <p>Гармония тела и духа</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Territory Gallery -->
+            <div class="gallery-category">
+                <h2>Территория</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="territory">
+                        <img src="Trash/Screenshot_7.png" alt="Территория санатория">
+                        <div class="gallery-overlay">
+                            <h3>Территория</h3>
+                            <p>Живописный уголок природы</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="territory">
+                        <img src="logo/WhatsApp Image 2026-03-26 at 20.14.41.jpeg" alt="Парковая зона">
+                        <div class="gallery-overlay">
+                            <h3>Парковая зона</h3>
+                            <p>Прогулки на свежем воздухе</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="territory">
+                        <img src="logo/WhatsApp Image 2026-03-26 at 20.14.41 (1).jpeg" alt="Беседка">
+                        <div class="gallery-overlay">
+                            <h3>Беседки</h3>
+                            <p>Для отдыха на природе</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="territory">
+                        <img src="Trash/Screenshot_1.png" alt="Аллея">
+                        <div class="gallery-overlay">
+                            <h3>Аллеи</h3>
+                            <p>Терренкур для прогулок</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Хотите увидеть всё своими глазами?</h2>
+            <p>Приезжайте к нам в гости на экскурсию!</p>
+            <div class="cta-buttons">
+                <a href="tel:+77163679030" class="btn btn-primary">Позвонить</a>
+                <a href="https://wa.me/77472265918" class="btn btn-whatsapp">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <img src="logo/WhatsApp Image 2026-03-26 at 20.14.41 (1).jpeg" alt="Логотип" class="footer-logo">
+                    <p>Санаторий «Щучинский» - ваше место для семейного лечебно-оздоровительного отдыха</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="rooms.html">Номера</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>📞 +7(71636) 7-90-30</p>
+                    <p>📱 +7(747) 226-59-18</p>
+                    <p>✉️ san-boro@mail.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="https://wa.me/77472265918" class="social-link">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Санаторий «Щучинский». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/77472265918" class="whatsapp-float" target="_blank">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+            <path fill="currentColor" d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.082c2.404 1.372 5.134 2.082 7.933 2.082 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.466c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.245 1.376 1.417-5.273-0.317-0.508c-1.261-2.027-1.928-4.358-1.928-6.754 0-6.903 5.614-12.517 12.517-12.517 6.903 0 12.517 5.614 12.517 12.517s-5.614 12.517-12.517 12.517z"/>
+        </svg>
+    </a>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close">&times;</button>
+            <button class="lightbox-nav lightbox-prev">&#10094;</button>
+            <img src="" alt="Lightbox Image" id="lightbox-img">
+            <button class="lightbox-nav lightbox-next">&#10095;</button>
+            <div class="lightbox-counter" id="lightbox-counter"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gallery Filter
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filter = btn.dataset.filter;
+
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.dataset.category === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Lightbox
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxCounter = document.getElementById('lightbox-counter');
+            const lightboxClose = document.querySelector('.lightbox-close');
+            const lightboxPrev = document.querySelector('.lightbox-prev');
+            const lightboxNext = document.querySelector('.lightbox-next');
+            let currentIndex = 0;
+            let visibleItems = Array.from(galleryItems).filter(item => item.style.display !== 'none');
+
+            galleryItems.forEach((item, index) => {
+                item.addEventListener('click', () => {
+                    visibleItems = Array.from(galleryItems).filter(i => i.style.display !== 'none');
+                    currentIndex = visibleItems.indexOf(item);
+                    showLightbox(currentIndex);
+                });
+            });
+
+            function showLightbox(index) {
+                if (visibleItems.length === 0) return;
+                const img = visibleItems[index].querySelector('img');
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightboxCounter.textContent = `${index + 1} / ${visibleItems.length}`;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            function showNext() {
+                currentIndex = (currentIndex + 1) % visibleItems.length;
+                showLightbox(currentIndex);
+            }
+
+            function showPrev() {
+                currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length;
+                showLightbox(currentIndex);
+            }
+
+            lightboxClose.addEventListener('click', closeLightbox);
+            lightboxNext.addEventListener('click', showNext);
+            lightboxPrev.addEventListener('click', showPrev);
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) closeLightbox();
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (!lightbox.classList.contains('active')) return;
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowRight') showNext();
+                if (e.key === 'ArrowLeft') showPrev();
+            });
+        });
+    </script>
+</body>
+</html>
